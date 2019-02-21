@@ -1,0 +1,93 @@
+@import "../bootstrap/bootstrap";
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Galada");
+body {
+  font-family: Galada;
+
+  header {
+    height: 80vh;
+    background: url("https://www.carolus.be/sites/default/files/brandenburger_tor.jpg");
+    background-size: cover;
+    background-position: bottom;
+    nav a:hover {
+      background-color: black;
+      transform: scale(1.2);
+    }
+  }
+  section.image {
+    height: 60vh;
+    background: url("https://vacationidea.com/pix/img25Hy8R/articles/best-things-to-do-in-germany_f.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  section.image-info {
+    height: 60vh;
+    background: url("https://png.pngtree.com/element_origin_min_pic/16/10/14/1558008fc411d91.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    .transparentElement {
+      position: absolute;
+      width: 100%;
+      height: 60vh;
+      background-color: rgba(82, 82, 82, 0.5);
+    }
+  }
+
+  .hero {
+    img {
+      width: 300px;
+      height: 250px;
+      /* For Safari 3.1 to 6.0 */
+      -webkit-transition-property: height, width;
+      -webkit-transition-duration: 2s;
+      -webkit-transition-timing-function: linear;
+      -webkit-transition-delay: 1s;
+      /* Standard syntax */
+      transition-property: height, width;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+    img {
+      &:hover {
+        width: 320px;
+        height: 270px;
+      }
+    }
+  }
+}
+section img.ajust {
+  width: 300px;
+  height: 300px;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+img.ajust:hover {
+  width: 600px;
+  height: 500px;
+}
+.expand-trans {
+  img {
+    width: 500px;
+    height: 500px;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: height, width;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    /* Standard syntax */
+    transition-property: height, width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  img {
+    &:hover {
+      height: 550px;
+      width: 550px;
+    }
+  }
+}
